@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041AA67D1CEC4D2F00DD4BE3 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA67C1CEC4D2F00DD4BE3 /* LogView.m */; };
+		041AA6811CEC56DB00DD4BE3 /* SinaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA6801CEC56DB00DD4BE3 /* SinaTool.m */; };
+		0438D3F21CED65B700EBF4BB /* cellImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438D3F11CED65B700EBF4BB /* cellImageView.m */; };
+		0438D3F71CEE0AAA00EBF4BB /* MyPhtotoBower.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438D3F61CEE0AAA00EBF4BB /* MyPhtotoBower.m */; };
+		04614B561CEF0E6D008740FE /* RetweetedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04614B551CEF0E6D008740FE /* RetweetedView.m */; };
+		04B5B3861CEC3FEA00BED1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3851CEC3FEA00BED1E7 /* main.m */; };
+		04B5B3891CEC3FEA00BED1E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3881CEC3FEA00BED1E7 /* AppDelegate.m */; };
+		04B5B38B1CEC3FEA00BED1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B5B38A1CEC3FEA00BED1E7 /* Assets.xcassets */; };
+		04B5B38E1CEC3FEA00BED1E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B5B38C1CEC3FEA00BED1E7 /* LaunchScreen.storyboard */; };
+		04B5B3991CEC3FEA00BED1E7 /* SinaApp_MVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3981CEC3FEA00BED1E7 /* SinaApp_MVCTests.m */; };
+		04B5B3A41CEC3FEA00BED1E7 /* SinaApp_MVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3A31CEC3FEA00BED1E7 /* SinaApp_MVCUITests.m */; };
+		04B5B3B81CEC417700BED1E7 /* SinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3B71CEC417700BED1E7 /* SinaViewController.m */; };
+		04B5B3BB1CEC418600BED1E7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3BA1CEC418600BED1E7 /* MessageViewController.m */; };
+		04B5B3BE1CEC418F00BED1E7 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3BD1CEC418F00BED1E7 /* SearchViewController.m */; };
+		04B5B3C11CEC419800BED1E7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5B3C01CEC419800BED1E7 /* SettingViewController.m */; };
+		04D29E191CEC876000E59299 /* SinaAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E0C1CEC876000E59299 /* SinaAnnotations.m */; };
+		04D29E1A1CEC876000E59299 /* SinaBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E0E1CEC876000E59299 /* SinaBaseClass.m */; };
+		04D29E1B1CEC876000E59299 /* SinaPicUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E101CEC876000E59299 /* SinaPicUrls.m */; };
+		04D29E1C1CEC876000E59299 /* SinaRetweetedStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E121CEC876000E59299 /* SinaRetweetedStatus.m */; };
+		04D29E1D1CEC876000E59299 /* SinaStatuses.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E141CEC876000E59299 /* SinaStatuses.m */; };
+		04D29E1E1CEC876000E59299 /* SinaUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E161CEC876000E59299 /* SinaUser.m */; };
+		04D29E1F1CEC876000E59299 /* SinaVisible.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E181CEC876000E59299 /* SinaVisible.m */; };
+		04D29E271CEC9FA500E59299 /* SinaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D29E261CEC9FA500E59299 /* SinaViewController.storyboard */; };
+		04D29E2A1CECA08800E59299 /* SinaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E291CECA08800E59299 /* SinaTableViewCell.m */; };
+		04D29E351CECAFD100E59299 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D29E2D1CECAFD100E59299 /* NSString+Extension.m */; };
+		04FEDB1C1CEFF49D00A07AF6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FEDB1B1CEFF49D00A07AF6 /* MediaPlayer.framework */; };
+		331EED00074BFCF4A62E2DAF /* libPods-SinaApp.MVC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56450FE9284FB60443BB7C6 /* libPods-SinaApp.MVC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B5B3951CEC3FEA00BED1E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B5B3791CEC3FEA00BED1E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B5B3801CEC3FEA00BED1E7;
+			remoteInfo = SinaApp.MVC;
+		};
+		04B5B3A01CEC3FEA00BED1E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B5B3791CEC3FEA00BED1E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B5B3801CEC3FEA00BED1E7;
+			remoteInfo = SinaApp.MVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041AA67B1CEC4D2F00DD4BE3 /* LogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogView.h; sourceTree = "<group>"; };
+		041AA67C1CEC4D2F00DD4BE3 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
+		041AA67F1CEC56DB00DD4BE3 /* SinaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaTool.h; sourceTree = "<group>"; };
+		041AA6801CEC56DB00DD4BE3 /* SinaTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaTool.m; sourceTree = "<group>"; };
+		0438D3F01CED65B700EBF4BB /* cellImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellImageView.h; sourceTree = "<group>"; };
+		0438D3F11CED65B700EBF4BB /* cellImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellImageView.m; sourceTree = "<group>"; };
+		0438D3F31CED709A00EBF4BB /* NSString_Extension1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_Extension1.h; sourceTree = "<group>"; };
+		0438D3F51CEE0AAA00EBF4BB /* MyPhtotoBower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhtotoBower.h; sourceTree = "<group>"; };
+		0438D3F61CEE0AAA00EBF4BB /* MyPhtotoBower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhtotoBower.m; sourceTree = "<group>"; };
+		04614B541CEF0E6D008740FE /* RetweetedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetweetedView.h; sourceTree = "<group>"; };
+		04614B551CEF0E6D008740FE /* RetweetedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetweetedView.m; sourceTree = "<group>"; };
+		04B5B3811CEC3FEA00BED1E7 /* SinaApp.MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaApp.MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B5B3851CEC3FEA00BED1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04B5B3871CEC3FEA00BED1E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04B5B3881CEC3FEA00BED1E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04B5B38A1CEC3FEA00BED1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B5B38D1CEC3FEA00BED1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B5B38F1CEC3FEA00BED1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B5B3941CEC3FEA00BED1E7 /* SinaApp.MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaApp.MVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B5B3981CEC3FEA00BED1E7 /* SinaApp_MVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaApp_MVCTests.m; sourceTree = "<group>"; };
+		04B5B39A1CEC3FEA00BED1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B5B39F1CEC3FEA00BED1E7 /* SinaApp.MVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaApp.MVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B5B3A31CEC3FEA00BED1E7 /* SinaApp_MVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaApp_MVCUITests.m; sourceTree = "<group>"; };
+		04B5B3A51CEC3FEA00BED1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B5B3B61CEC417700BED1E7 /* SinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaViewController.h; sourceTree = "<group>"; };
+		04B5B3B71CEC417700BED1E7 /* SinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaViewController.m; sourceTree = "<group>"; };
+		04B5B3B91CEC418600BED1E7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		04B5B3BA1CEC418600BED1E7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		04B5B3BC1CEC418F00BED1E7 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		04B5B3BD1CEC418F00BED1E7 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		04B5B3BF1CEC419800BED1E7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		04B5B3C01CEC419800BED1E7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		04D29E0A1CEC876000E59299 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		04D29E0B1CEC876000E59299 /* SinaAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaAnnotations.h; sourceTree = "<group>"; };
+		04D29E0C1CEC876000E59299 /* SinaAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaAnnotations.m; sourceTree = "<group>"; };
+		04D29E0D1CEC876000E59299 /* SinaBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaBaseClass.h; sourceTree = "<group>"; };
+		04D29E0E1CEC876000E59299 /* SinaBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaBaseClass.m; sourceTree = "<group>"; };
+		04D29E0F1CEC876000E59299 /* SinaPicUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaPicUrls.h; sourceTree = "<group>"; };
+		04D29E101CEC876000E59299 /* SinaPicUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaPicUrls.m; sourceTree = "<group>"; };
+		04D29E111CEC876000E59299 /* SinaRetweetedStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaRetweetedStatus.h; sourceTree = "<group>"; };
+		04D29E121CEC876000E59299 /* SinaRetweetedStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaRetweetedStatus.m; sourceTree = "<group>"; };
+		04D29E131CEC876000E59299 /* SinaStatuses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaStatuses.h; sourceTree = "<group>"; };
+		04D29E141CEC876000E59299 /* SinaStatuses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaStatuses.m; sourceTree = "<group>"; };
+		04D29E151CEC876000E59299 /* SinaUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaUser.h; sourceTree = "<group>"; };
+		04D29E161CEC876000E59299 /* SinaUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaUser.m; sourceTree = "<group>"; };
+		04D29E171CEC876000E59299 /* SinaVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaVisible.h; sourceTree = "<group>"; };
+		04D29E181CEC876000E59299 /* SinaVisible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaVisible.m; sourceTree = "<group>"; };
+		04D29E261CEC9FA500E59299 /* SinaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SinaViewController.storyboard; sourceTree = "<group>"; };
+		04D29E281CECA08800E59299 /* SinaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaTableViewCell.h; sourceTree = "<group>"; };
+		04D29E291CECA08800E59299 /* SinaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaTableViewCell.m; sourceTree = "<group>"; };
+		04D29E2C1CECAFD100E59299 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		04D29E2D1CECAFD100E59299 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		04FEDB1B1CEFF49D00A07AF6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		12DEAA60F38AADD16E2D10CC /* Pods-SinaApp.MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaApp.MVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaApp.MVC/Pods-SinaApp.MVC.debug.xcconfig"; sourceTree = "<group>"; };
+		62999B4600CC0E910DAF4DF9 /* Pods-SinaApp.MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaApp.MVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaApp.MVC/Pods-SinaApp.MVC.release.xcconfig"; sourceTree = "<group>"; };
+		C56450FE9284FB60443BB7C6 /* libPods-SinaApp.MVC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinaApp.MVC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B5B37E1CEC3FEA00BED1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FEDB1C1CEFF49D00A07AF6 /* MediaPlayer.framework in Frameworks */,
+				331EED00074BFCF4A62E2DAF /* libPods-SinaApp.MVC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B3911CEC3FEA00BED1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B39C1CEC3FEA00BED1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041AA6791CEC4CBB00DD4BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04D29E091CEC876000E59299 /* dataBase */,
+				041AA67F1CEC56DB00DD4BE3 /* SinaTool.h */,
+				041AA6801CEC56DB00DD4BE3 /* SinaTool.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		041AA67A1CEC4CD700DD4BE3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				041AA67B1CEC4D2F00DD4BE3 /* LogView.h */,
+				041AA67C1CEC4D2F00DD4BE3 /* LogView.m */,
+				04D29E281CECA08800E59299 /* SinaTableViewCell.h */,
+				04D29E291CECA08800E59299 /* SinaTableViewCell.m */,
+				0438D3F01CED65B700EBF4BB /* cellImageView.h */,
+				0438D3F11CED65B700EBF4BB /* cellImageView.m */,
+				0438D3F51CEE0AAA00EBF4BB /* MyPhtotoBower.h */,
+				0438D3F61CEE0AAA00EBF4BB /* MyPhtotoBower.m */,
+				04614B541CEF0E6D008740FE /* RetweetedView.h */,
+				04614B551CEF0E6D008740FE /* RetweetedView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		041AA67E1CEC56AF00DD4BE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3B61CEC417700BED1E7 /* SinaViewController.h */,
+				04B5B3B71CEC417700BED1E7 /* SinaViewController.m */,
+				04D29E261CEC9FA500E59299 /* SinaViewController.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04B5B3781CEC3FEA00BED1E7 = {
+			isa = PBXGroup;
+			children = (
+				04B5B3831CEC3FEA00BED1E7 /* SinaApp.MVC */,
+				04B5B3971CEC3FEA00BED1E7 /* SinaApp.MVCTests */,
+				04B5B3A21CEC3FEA00BED1E7 /* SinaApp.MVCUITests */,
+				04B5B3821CEC3FEA00BED1E7 /* Products */,
+				68819F6F915D5A9418190D9E /* Pods */,
+				057AFC7AA073360CE636B91B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04B5B3821CEC3FEA00BED1E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3811CEC3FEA00BED1E7 /* SinaApp.MVC.app */,
+				04B5B3941CEC3FEA00BED1E7 /* SinaApp.MVCTests.xctest */,
+				04B5B39F1CEC3FEA00BED1E7 /* SinaApp.MVCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B5B3831CEC3FEA00BED1E7 /* SinaApp.MVC */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3871CEC3FEA00BED1E7 /* AppDelegate.h */,
+				04B5B3881CEC3FEA00BED1E7 /* AppDelegate.m */,
+				04D29E2B1CECAFD100E59299 /* 自动计算文字大小 */,
+				04B5B3B11CEC40B800BED1E7 /* UI */,
+				04B5B38A1CEC3FEA00BED1E7 /* Assets.xcassets */,
+				04B5B38C1CEC3FEA00BED1E7 /* LaunchScreen.storyboard */,
+				04B5B38F1CEC3FEA00BED1E7 /* Info.plist */,
+				04B5B3841CEC3FEA00BED1E7 /* Supporting Files */,
+			);
+			path = SinaApp.MVC;
+			sourceTree = "<group>";
+		};
+		04B5B3841CEC3FEA00BED1E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3851CEC3FEA00BED1E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B5B3971CEC3FEA00BED1E7 /* SinaApp.MVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3981CEC3FEA00BED1E7 /* SinaApp_MVCTests.m */,
+				04B5B39A1CEC3FEA00BED1E7 /* Info.plist */,
+			);
+			path = SinaApp.MVCTests;
+			sourceTree = "<group>";
+		};
+		04B5B3A21CEC3FEA00BED1E7 /* SinaApp.MVCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3A31CEC3FEA00BED1E7 /* SinaApp_MVCUITests.m */,
+				04B5B3A51CEC3FEA00BED1E7 /* Info.plist */,
+			);
+			path = SinaApp.MVCUITests;
+			sourceTree = "<group>";
+		};
+		04B5B3B11CEC40B800BED1E7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3B51CEC40ED00BED1E7 /* Setting */,
+				04B5B3B41CEC40E400BED1E7 /* Search */,
+				04B5B3B31CEC40D700BED1E7 /* Message */,
+				04B5B3B21CEC40C300BED1E7 /* Sina */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		04B5B3B21CEC40C300BED1E7 /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				041AA67E1CEC56AF00DD4BE3 /* Controller */,
+				041AA67A1CEC4CD700DD4BE3 /* view */,
+				041AA6791CEC4CBB00DD4BE3 /* Model */,
+			);
+			name = Sina;
+			sourceTree = "<group>";
+		};
+		04B5B3B31CEC40D700BED1E7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3B91CEC418600BED1E7 /* MessageViewController.h */,
+				04B5B3BA1CEC418600BED1E7 /* MessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		04B5B3B41CEC40E400BED1E7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3BC1CEC418F00BED1E7 /* SearchViewController.h */,
+				04B5B3BD1CEC418F00BED1E7 /* SearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		04B5B3B51CEC40ED00BED1E7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				04B5B3BF1CEC419800BED1E7 /* SettingViewController.h */,
+				04B5B3C01CEC419800BED1E7 /* SettingViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		04D29E091CEC876000E59299 /* dataBase */ = {
+			isa = PBXGroup;
+			children = (
+				04D29E0A1CEC876000E59299 /* DataModels.h */,
+				04D29E0B1CEC876000E59299 /* SinaAnnotations.h */,
+				04D29E0C1CEC876000E59299 /* SinaAnnotations.m */,
+				04D29E0D1CEC876000E59299 /* SinaBaseClass.h */,
+				04D29E0E1CEC876000E59299 /* SinaBaseClass.m */,
+				04D29E0F1CEC876000E59299 /* SinaPicUrls.h */,
+				04D29E101CEC876000E59299 /* SinaPicUrls.m */,
+				04D29E111CEC876000E59299 /* SinaRetweetedStatus.h */,
+				04D29E121CEC876000E59299 /* SinaRetweetedStatus.m */,
+				04D29E131CEC876000E59299 /* SinaStatuses.h */,
+				04D29E141CEC876000E59299 /* SinaStatuses.m */,
+				04D29E151CEC876000E59299 /* SinaUser.h */,
+				04D29E161CEC876000E59299 /* SinaUser.m */,
+				04D29E171CEC876000E59299 /* SinaVisible.h */,
+				04D29E181CEC876000E59299 /* SinaVisible.m */,
+			);
+			path = dataBase;
+			sourceTree = "<group>";
+		};
+		04D29E2B1CECAFD100E59299 /* 自动计算文字大小 */ = {
+			isa = PBXGroup;
+			children = (
+				04D29E2C1CECAFD100E59299 /* NSString+Extension.h */,
+				04D29E2D1CECAFD100E59299 /* NSString+Extension.m */,
+				0438D3F31CED709A00EBF4BB /* NSString_Extension1.h */,
+			);
+			path = "自动计算文字大小";
+			sourceTree = "<group>";
+		};
+		057AFC7AA073360CE636B91B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04FEDB1B1CEFF49D00A07AF6 /* MediaPlayer.framework */,
+				C56450FE9284FB60443BB7C6 /* libPods-SinaApp.MVC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68819F6F915D5A9418190D9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12DEAA60F38AADD16E2D10CC /* Pods-SinaApp.MVC.debug.xcconfig */,
+				62999B4600CC0E910DAF4DF9 /* Pods-SinaApp.MVC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B5B3801CEC3FEA00BED1E7 /* SinaApp.MVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B5B3A81CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVC" */;
+			buildPhases = (
+				BCBBA15FAD48D88C9A0D716F /* 📦 Check Pods Manifest.lock */,
+				04B5B37D1CEC3FEA00BED1E7 /* Sources */,
+				04B5B37E1CEC3FEA00BED1E7 /* Frameworks */,
+				04B5B37F1CEC3FEA00BED1E7 /* Resources */,
+				0720CD3ADE92C901789DD450 /* 📦 Embed Pods Frameworks */,
+				F89907ECB7B30BC5A76CD25C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SinaApp.MVC;
+			productName = SinaApp.MVC;
+			productReference = 04B5B3811CEC3FEA00BED1E7 /* SinaApp.MVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04B5B3931CEC3FEA00BED1E7 /* SinaApp.MVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B5B3AB1CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVCTests" */;
+			buildPhases = (
+				04B5B3901CEC3FEA00BED1E7 /* Sources */,
+				04B5B3911CEC3FEA00BED1E7 /* Frameworks */,
+				04B5B3921CEC3FEA00BED1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B5B3961CEC3FEA00BED1E7 /* PBXTargetDependency */,
+			);
+			name = SinaApp.MVCTests;
+			productName = SinaApp.MVCTests;
+			productReference = 04B5B3941CEC3FEA00BED1E7 /* SinaApp.MVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04B5B39E1CEC3FEA00BED1E7 /* SinaApp.MVCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B5B3AE1CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVCUITests" */;
+			buildPhases = (
+				04B5B39B1CEC3FEA00BED1E7 /* Sources */,
+				04B5B39C1CEC3FEA00BED1E7 /* Frameworks */,
+				04B5B39D1CEC3FEA00BED1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B5B3A11CEC3FEA00BED1E7 /* PBXTargetDependency */,
+			);
+			name = SinaApp.MVCUITests;
+			productName = SinaApp.MVCUITests;
+			productReference = 04B5B39F1CEC3FEA00BED1E7 /* SinaApp.MVCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B5B3791CEC3FEA00BED1E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04B5B3801CEC3FEA00BED1E7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					04B5B3931CEC3FEA00BED1E7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 04B5B3801CEC3FEA00BED1E7;
+					};
+					04B5B39E1CEC3FEA00BED1E7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 04B5B3801CEC3FEA00BED1E7;
+					};
+				};
+			};
+			buildConfigurationList = 04B5B37C1CEC3FEA00BED1E7 /* Build configuration list for PBXProject "SinaApp.MVC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B5B3781CEC3FEA00BED1E7;
+			productRefGroup = 04B5B3821CEC3FEA00BED1E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B5B3801CEC3FEA00BED1E7 /* SinaApp.MVC */,
+				04B5B3931CEC3FEA00BED1E7 /* SinaApp.MVCTests */,
+				04B5B39E1CEC3FEA00BED1E7 /* SinaApp.MVCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B5B37F1CEC3FEA00BED1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B5B38B1CEC3FEA00BED1E7 /* Assets.xcassets in Resources */,
+				04B5B38E1CEC3FEA00BED1E7 /* LaunchScreen.storyboard in Resources */,
+				04D29E271CEC9FA500E59299 /* SinaViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B3921CEC3FEA00BED1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B39D1CEC3FEA00BED1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0720CD3ADE92C901789DD450 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaApp.MVC/Pods-SinaApp.MVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBBA15FAD48D88C9A0D716F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F89907ECB7B30BC5A76CD25C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaApp.MVC/Pods-SinaApp.MVC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B5B37D1CEC3FEA00BED1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D29E1C1CEC876000E59299 /* SinaRetweetedStatus.m in Sources */,
+				04D29E1E1CEC876000E59299 /* SinaUser.m in Sources */,
+				04D29E2A1CECA08800E59299 /* SinaTableViewCell.m in Sources */,
+				04D29E1D1CEC876000E59299 /* SinaStatuses.m in Sources */,
+				04B5B3B81CEC417700BED1E7 /* SinaViewController.m in Sources */,
+				04B5B3891CEC3FEA00BED1E7 /* AppDelegate.m in Sources */,
+				041AA67D1CEC4D2F00DD4BE3 /* LogView.m in Sources */,
+				04D29E351CECAFD100E59299 /* NSString+Extension.m in Sources */,
+				04B5B3BE1CEC418F00BED1E7 /* SearchViewController.m in Sources */,
+				0438D3F21CED65B700EBF4BB /* cellImageView.m in Sources */,
+				04D29E1A1CEC876000E59299 /* SinaBaseClass.m in Sources */,
+				04B5B3BB1CEC418600BED1E7 /* MessageViewController.m in Sources */,
+				0438D3F71CEE0AAA00EBF4BB /* MyPhtotoBower.m in Sources */,
+				04D29E191CEC876000E59299 /* SinaAnnotations.m in Sources */,
+				04614B561CEF0E6D008740FE /* RetweetedView.m in Sources */,
+				04D29E1B1CEC876000E59299 /* SinaPicUrls.m in Sources */,
+				04D29E1F1CEC876000E59299 /* SinaVisible.m in Sources */,
+				04B5B3861CEC3FEA00BED1E7 /* main.m in Sources */,
+				041AA6811CEC56DB00DD4BE3 /* SinaTool.m in Sources */,
+				04B5B3C11CEC419800BED1E7 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B3901CEC3FEA00BED1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B5B3991CEC3FEA00BED1E7 /* SinaApp_MVCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B5B39B1CEC3FEA00BED1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B5B3A41CEC3FEA00BED1E7 /* SinaApp_MVCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B5B3961CEC3FEA00BED1E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B5B3801CEC3FEA00BED1E7 /* SinaApp.MVC */;
+			targetProxy = 04B5B3951CEC3FEA00BED1E7 /* PBXContainerItemProxy */;
+		};
+		04B5B3A11CEC3FEA00BED1E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B5B3801CEC3FEA00BED1E7 /* SinaApp.MVC */;
+			targetProxy = 04B5B3A01CEC3FEA00BED1E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04B5B38C1CEC3FEA00BED1E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B5B38D1CEC3FEA00BED1E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B5B3A61CEC3FEA00BED1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B5B3A71CEC3FEA00BED1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B5B3A91CEC3FEA00BED1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12DEAA60F38AADD16E2D10CC /* Pods-SinaApp.MVC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SinaApp.MVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B5B3AA1CEC3FEA00BED1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62999B4600CC0E910DAF4DF9 /* Pods-SinaApp.MVC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SinaApp.MVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04B5B3AC1CEC3FEA00BED1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SinaApp.MVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinaApp.MVC.app/SinaApp.MVC";
+			};
+			name = Debug;
+		};
+		04B5B3AD1CEC3FEA00BED1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SinaApp.MVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinaApp.MVC.app/SinaApp.MVC";
+			};
+			name = Release;
+		};
+		04B5B3AF1CEC3FEA00BED1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SinaApp.MVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SinaApp.MVC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04B5B3B01CEC3FEA00BED1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SinaApp.MVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhiyou.YSH.SinaApp-MVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SinaApp.MVC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B5B37C1CEC3FEA00BED1E7 /* Build configuration list for PBXProject "SinaApp.MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B5B3A61CEC3FEA00BED1E7 /* Debug */,
+				04B5B3A71CEC3FEA00BED1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B5B3A81CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B5B3A91CEC3FEA00BED1E7 /* Debug */,
+				04B5B3AA1CEC3FEA00BED1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B5B3AB1CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B5B3AC1CEC3FEA00BED1E7 /* Debug */,
+				04B5B3AD1CEC3FEA00BED1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B5B3AE1CEC3FEA00BED1E7 /* Build configuration list for PBXNativeTarget "SinaApp.MVCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B5B3AF1CEC3FEA00BED1E7 /* Debug */,
+				04B5B3B01CEC3FEA00BED1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B5B3791CEC3FEA00BED1E7 /* Project object */;
+}
