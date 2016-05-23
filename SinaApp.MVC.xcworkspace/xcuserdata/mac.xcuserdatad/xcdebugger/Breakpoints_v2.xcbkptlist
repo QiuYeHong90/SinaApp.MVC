@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SinaApp.MVC/cellImageView.m"
-            timestampString = "485449295.604355"
+            filePath = "SinaApp.MVC/SinaTableViewCell.m"
+            timestampString = "485677881.281185"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "-toViewTouch:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SinaApp.MVC/MyPhtotoBower.m"
-            timestampString = "485447324.722599"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-show"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-setStatus:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SinaApp.MVC/cellImageView.m"
-            timestampString = "485449295.604355"
+            timestampString = "485668467.616377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "-imageViewAnimationWithImagView:"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-imageViewTouch:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SinaApp.MVC/cellImageView.m"
-            timestampString = "485449295.604355"
+            filePath = "SinaApp.MVC/SinaViewController.m"
+            timestampString = "485674665.654321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "-imageViewAnimationWithImagView:"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-tableView:heightForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
