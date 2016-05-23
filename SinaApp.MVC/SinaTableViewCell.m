@@ -42,6 +42,8 @@
     //jiang fuwu fanghui de zifuchuan n
     NSDateFormatter * formater = [[NSDateFormatter alloc]init];
     [formater setDateFormat:@"eee MMM d HH:mm:ss Z yyyy"];
+//    [formater setDateFormat:@"EEE MMM dd HH:mm:ss Z yyyy"];
+    formater.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     NSDate * timeDate =[formater dateFromString:status.createdAt];
     //只有转换成Date对象,才可以和挡墙的时间进行对比
     //获取当前时间,
