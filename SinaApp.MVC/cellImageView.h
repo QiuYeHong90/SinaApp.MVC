@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "DataModels.h"
 @class MyPhtotoBower;
-@interface cellImageView : UIView
+@interface cellImageView : UIView<UIScrollViewDelegate>
+{
+    CGPoint _center;
+}
 @property (nonatomic ,strong) SinaStatuses *status;
 //
 @property (nonatomic,strong) NSArray * urlArray;
 @property (nonatomic,strong)MyPhtotoBower * myPhoto;
+
 @end

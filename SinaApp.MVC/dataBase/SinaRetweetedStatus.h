@@ -18,7 +18,7 @@
 @property (nonatomic, strong) NSString *inReplyToScreenName;
 @property (nonatomic, assign) BOOL isLongText;
 @property (nonatomic, strong) NSArray *picUrls;
-@property (nonatomic, strong) NSString *text;
+@property (nonatomic, copy) NSString *text;
 @property (nonatomic, strong) NSString *idstr;
 @property (nonatomic, assign) double textLength;
 @property (nonatomic, assign) double sourceType;

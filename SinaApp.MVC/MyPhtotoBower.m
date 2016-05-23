@@ -21,6 +21,11 @@
         [singletap setNumberOfTapsRequired:1];
         [_scroll addGestureRecognizer:singletap];
         _scroll.delegate = self;
+        
+       
+          
+        
+        
     }
     return self;
 }
@@ -59,13 +64,14 @@
     self.block();
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     self.frame = window.bounds;
-    self.backgroundColor = [UIColor blackColor];
+//    self.backgroundColor = [UIColor blackColor];
     [window addObserver:self forKeyPath:@"frame" options:0 context:nil];
     [window addSubview:self];
 }
 -(void)remove
 {
-    [self removeFromSuperview];
+    
+//    [self removeFromSuperview];
 }
 
 /*

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041AA67D1CEC4D2F00DD4BE3 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA67C1CEC4D2F00DD4BE3 /* LogView.m */; };
 		041AA6811CEC56DB00DD4BE3 /* SinaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA6801CEC56DB00DD4BE3 /* SinaTool.m */; };
+		04330A861CF2E7E6004ECAFA /* compose_toolbar_picture_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04330A851CF2E7E6004ECAFA /* compose_toolbar_picture_highlighted@2x.png */; };
 		0438D3F21CED65B700EBF4BB /* cellImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438D3F11CED65B700EBF4BB /* cellImageView.m */; };
 		0438D3F71CEE0AAA00EBF4BB /* MyPhtotoBower.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438D3F61CEE0AAA00EBF4BB /* MyPhtotoBower.m */; };
 		04614B561CEF0E6D008740FE /* RetweetedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04614B551CEF0E6D008740FE /* RetweetedView.m */; };
@@ -58,6 +59,7 @@
 		041AA67C1CEC4D2F00DD4BE3 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
 		041AA67F1CEC56DB00DD4BE3 /* SinaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaTool.h; sourceTree = "<group>"; };
 		041AA6801CEC56DB00DD4BE3 /* SinaTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaTool.m; sourceTree = "<group>"; };
+		04330A851CF2E7E6004ECAFA /* compose_toolbar_picture_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose_toolbar_picture_highlighted@2x.png"; sourceTree = "<group>"; };
 		0438D3F01CED65B700EBF4BB /* cellImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellImageView.h; sourceTree = "<group>"; };
 		0438D3F11CED65B700EBF4BB /* cellImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellImageView.m; sourceTree = "<group>"; };
 		0438D3F31CED709A00EBF4BB /* NSString_Extension1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_Extension1.h; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				04D29E091CEC876000E59299 /* dataBase */,
 				041AA67F1CEC56DB00DD4BE3 /* SinaTool.h */,
 				041AA6801CEC56DB00DD4BE3 /* SinaTool.m */,
+				04330A851CF2E7E6004ECAFA /* compose_toolbar_picture_highlighted@2x.png */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				04B5B38B1CEC3FEA00BED1E7 /* Assets.xcassets in Resources */,
 				04B5B38E1CEC3FEA00BED1E7 /* LaunchScreen.storyboard in Resources */,
+				04330A861CF2E7E6004ECAFA /* compose_toolbar_picture_highlighted@2x.png in Resources */,
 				04D29E271CEC9FA500E59299 /* SinaViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
