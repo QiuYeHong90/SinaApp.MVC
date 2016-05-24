@@ -8,7 +8,8 @@
 #import "MyPhtotoBower.h"
 #import "cellImageView.h"
 #import "UIImageView+WebCache.h"
-
+#import "MBProgressHUD.h"
+//#import "UIImageView_urlString.h"
 @implementation cellImageView
 
 
@@ -28,7 +29,7 @@
         if (self.urlArray.count!=0&&self.urlArray){
             
             
-
+            
             NSString * picUrlStr;
             if ([self.urlArray[idx] isKindOfClass:[SinaPicUrls class]]) {
                 SinaPicUrls * picUrls = (SinaPicUrls*)self.urlArray[idx];
@@ -42,6 +43,7 @@
             } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                 
             }];
+            
             imageView.tag = idx;
             
         }
@@ -101,7 +103,7 @@
         //滑动视图需要判是否可以竖向滑动
     scroll.contentSize = CGSizeMake(CGRectGetWidth(scroll.frame)*weakSelf.urlArray.count, CGRectGetHeight(scroll.frame));
         
-        
+        NSMutableArray *mutArray = [[NSMutableArray alloc]init];
         
     [weakSelf.urlArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //创建smallScroll
@@ -122,17 +124,48 @@
         {
             picUrlStr = [self.urlArray[idx] objectForKey:@"thumbnail_pic"];
         }
-
-        NSString * urlBitImgStr = [picUrlStr stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"bmiddle"];
         
+        NSString * urlBitImgStr = [picUrlStr stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"large"];
+        [mutArray addObject:urlBitImgStr];
+        [weakMyphtoto.urlString setArray:mutArray];
+        /*
+         <#注释内容#>
+         */
+        /*
+         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+         hud.mode = MBProgressHUDModeAnnularDeterminate;
+         hud.labelText = @"Loading";
+         [self doSomethingInBackgroundWithProgressCallback:^(float progress) {
+         hud.progress = progress;
+         } completionCallback:^{
+         [hud hide:YES];
+         }];
+         */
         //bmiddle
+        //TODO:进程条的添加
+        //TODO:只有被点击的才被加载其他的都是默认的图片
+        
+        if (idx == index) {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:scroll animated:YES];
+            hud.mode = MBProgressHUDModeDeterminate;
+            //        hud.labelText = @"loading";
+            [imageView sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString:urlBitImgStr] placeholderImage:[(UIImageView*)weakSelf.subviews[idx] image] options:SDWebImageRetryFailed  progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                //在这里写进程
+                hud.progress =receivedSize/(float)expectedSize;
+                
+            } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //            NSLog(@"===%@",error);
+                hud.labelText = @"完成";
+                [hud hide:YES];
+                
+            }];
 
-        [imageView sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString:urlBitImgStr] placeholderImage:[(UIImageView*)weakSelf.subviews[idx] image] options:SDWebImageRetryFailed  progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-            
-        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//            NSLog(@"===%@",error);
-        }];
-        [smallScroll addSubview:imageView];
+        }else{
+           
+            imageView.image = [(UIImageView*)weakSelf.subviews[idx] image];
+        }
+        
+               [smallScroll addSubview:imageView];
         //
         //设置代理
         smallScroll.delegate = weakSelf;
@@ -157,7 +190,7 @@
    /*
     CGRect rectInTableView = [tableView rectForRowAtIndexPath:indexPath];
     
-    
+    //经典的语句
     CGRect rect = [tableView convertRect:rectInTableView toView:[tableView superview]];
 */
     

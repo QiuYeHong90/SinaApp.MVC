@@ -5,7 +5,7 @@
 //  Created by mac on 16/5/13.
 //  Copyright © 2016年 mac. All rights reserved.
 //
-
+#import "TTTAttributedLabel.h"
 #import "NSString+Extension.h"
 
 @implementation NSString (Extension)
@@ -32,18 +32,53 @@
     }
     return nil;
 }
-
-
--(NSMutableAttributedString*)sinaString
+-(void)stringWihtAttributedLabel:(TTTAttributedLabel*)attributedLabel
 {
-    NSMutableAttributedString * attributString= [[NSMutableAttributedString alloc]initWithString:self attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]}];
-    NSString * pattern = @"(@\\w+)|(#\\w+#)|(http(s)?://([A-Za-z0-9._-]+(/)?)*)";
-    [[self matchStringWithPattern:pattern] enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSRange resRange = obj.range;
-        [attributString addAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} range:resRange];
+    
+    [[self matchStringWithPattern:@"(@\\w+)|(#\\w+#)|(http(s)?://([A-Za-z0-9._-]+(/)?)*)"] enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString * resultStr =[self substringWithRange:obj.range];
+        TTTAttributedLabelLink * attrLabLink;
+        
+        
+        attrLabLink =[attributedLabel addLinkToTransitInformation:@{@"name":resultStr} withRange:obj.range];
+        
+        
+        attrLabLink.linkTapBlock = ^(TTTAttributedLabel * lab, TTTAttributedLabelLink * labLink){
+            NSLog(@"attributes==%@",labLink.result.components);
+            if (labLink.result.URL) {
+                NSLog(@"==%@",labLink.result.URL);
+            }
+        };
         
     }];
-    return attributString;
+
+}
+
+-(void)sinaString:(TTTAttributedLabel*)attributedLabel
+{
+
+    NSString * pattern = @"(@\\w+)|(#\\w+#)|(http(s)?://([A-Za-z0-9._-]+(/)?)*)";
+    [[self matchStringWithPattern:pattern] enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        NSRange resRange = obj.range;
+//        [attributString addAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} range:resRange];
+        
+
+        NSString * resultStr =[self substringWithRange:obj.range];
+        TTTAttributedLabelLink * attrLabLink;
+        
+        
+        attrLabLink =[attributedLabel addLinkToTransitInformation:@{@"name":resultStr} withRange:obj.range];
+        
+        
+        attrLabLink.linkTapBlock = ^(TTTAttributedLabel * lab, TTTAttributedLabelLink * labLink){
+            NSLog(@"attributes==%@",labLink.result.components);
+            if (labLink.result.URL) {
+                NSLog(@"==%@",labLink.result.URL);
+            }
+        };
+
+    }];
+    return ;
     
 }
 

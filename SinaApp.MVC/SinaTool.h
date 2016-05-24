@@ -9,8 +9,6 @@
 
 
 
-
-
 #import <Foundation/Foundation.h>
 @class SinaTool,SinaBaseClass;
 @protocol SinaToolDelegate <NSObject>
@@ -42,4 +40,5 @@
 -(void)LoadData;
 //获取微博
 //发布微博
+
 @end

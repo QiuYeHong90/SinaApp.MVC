@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04085A6D1CF499BD0057E21B /* UIImageView_urlString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageView_urlString.h; sourceTree = "<group>"; };
 		041AA67B1CEC4D2F00DD4BE3 /* LogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogView.h; sourceTree = "<group>"; };
 		041AA67C1CEC4D2F00DD4BE3 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
 		041AA67F1CEC56DB00DD4BE3 /* SinaTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaTool.h; sourceTree = "<group>"; };
@@ -318,6 +319,7 @@
 				04D29E2C1CECAFD100E59299 /* NSString+Extension.h */,
 				04D29E2D1CECAFD100E59299 /* NSString+Extension.m */,
 				0438D3F31CED709A00EBF4BB /* NSString_Extension1.h */,
+				04085A6D1CF499BD0057E21B /* UIImageView_urlString.h */,
 			);
 			path = "自动计算文字大小";
 			sourceTree = "<group>";

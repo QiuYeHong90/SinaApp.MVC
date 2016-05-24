@@ -13,5 +13,7 @@
 @interface NSString (Extension)
 -(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
 -(NSArray<NSTextCheckingResult*>*)matchStringWithPattern:(NSString *)pattern;
--(NSMutableAttributedString*)sinaString;
+//-(NSMutableAttributedString*)sinaString;
+-(void)sinaString:(TTTAttributedLabel*)attributedLabel;
+-(void)stringWihtAttributedLabel:(TTTAttributedLabel*)attributedLabel;
 @end

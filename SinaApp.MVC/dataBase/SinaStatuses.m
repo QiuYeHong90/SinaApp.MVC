@@ -161,12 +161,12 @@ NSString *const kSinaStatusesOriginalPic = @"original_pic";
             self.inReplyToUserId = [self objectOrNilForKey:kSinaStatusesInReplyToUserId fromDictionary:dict];
             self.originalPic = [self objectOrNilForKey:kSinaStatusesOriginalPic fromDictionary:dict];
         
-        self.cellTextHeight = [self.text sizeWithFont:[UIFont systemFontOfSize:17] maxSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, CGFLOAT_MAX)].height;
+        self.cellTextHeight = [self.text sizeWithFont:[UIFont systemFontOfSize:20] maxSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, CGFLOAT_MAX)].height;
         self.cellViewHeight = [self calculateHeightWithCount:(int)self.picUrls.count];
         if (self.retweetedStatus) {
             if (self.retweetedStatus.text) {
                 //计算文字高度
-                self.cellRetweetTextHeith =[self.retweetedStatus.text sizeWithFont:[UIFont systemFontOfSize:18] maxSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, CGFLOAT_MAX)].height;
+                self.cellRetweetTextHeith =[self.retweetedStatus.text sizeWithFont:[UIFont systemFontOfSize:17] maxSize:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, CGFLOAT_MAX)].height;
             }
             else
             {

@@ -36,7 +36,8 @@
 -(void)setStatus:(SinaStatuses *)status
 {
     _status = status;
-    self.content.attributedText = [status.text sinaString];
+    _content.text = status.text;
+    [_content.text sinaString:_content];
     
     
     //jiang fuwu fanghui de zifuchuan n
@@ -84,7 +85,7 @@
     
 //   CGRect rect = self.content.frame;
 //    rect.size.height = status.cellTextHeight;
-    CGFloat height = 80+ status.cellTextHeight;
+    CGFloat height = status.cellTextHeight+80;
 //    self.pictureView.status = status;
     self.pictureView.urlArray = status.picUrls;
     if (status.cellViewHeight!=0)
@@ -105,39 +106,13 @@
     
     
     [self retweetedStatuWithStats:status withHeiht:height];
-    [self stringWithProcessingWith:status.text withLab:self.content];
+
  
 }
 //下面是文字处理没距离的
 //    NSArray * array = [status.text matchStringWithPattern:@"#[^#]+#"];
 //    NSLog(@"==%@",array);
 //特殊的点击功能@"(@\\w+)|(#\\w+#)|(http(s)?://([A-Za-z0-9._-]+(/)?)*)"
--(void)stringWithProcessingWith:(NSString*)str withLab:(TTTAttributedLabel*)attributedLabel
-{
-    NSArray * strArray = @[@"(@\\w+)",@"(#\\w+#)",@"(http(s)?://([A-Za-z0-9._-]+(/)?)*)"];
-    for (int i =0; i<strArray.count; i++) {
-        
-        [[str matchStringWithPattern:strArray[i]] enumerateObjectsUsingBlock:^(NSTextCheckingResult * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            NSString * resultStr =[str substringWithRange:obj.range];
-            TTTAttributedLabelLink * attrLabLink;
-            if (i==2) {
-                attrLabLink  = [attributedLabel addLinkToURL:[NSURL URLWithString:resultStr] withRange:obj.range];
-            }else{
-                attrLabLink =[attributedLabel addLinkToTransitInformation:@{@"name":resultStr} withRange:obj.range];
-            }
-            
-            attrLabLink.linkTapBlock = ^(TTTAttributedLabel * lab, TTTAttributedLabelLink * labLink){
-                NSLog(@"attributes==%@",labLink.result.components);
-                if (labLink.result.URL) {
-                    NSLog(@"==%@",labLink.result.URL);
-                }
-            };
-            
-        }];
-        
-    }
-
-}
 
 -(void)retweetedStatuWithStats:(SinaStatuses*)stats withHeiht:(CGFloat)height
 {
@@ -160,10 +135,9 @@
         }else{
             textStr = stats.retweetedStatus.text;
         }
+        self.retweetedView.textLab.text = textStr;
+      [self.retweetedView.textLab.text sinaString:self.retweetedView.textLab];
         
-        self.retweetedView.textLab.attributedText = [textStr sinaString];
-        
-        [self stringWithProcessingWith:textStr withLab:self.retweetedView.textLab];
         self.retweetedView.frame = CGRectMake(0, height, self.contentView.bounds.size.width,stats.cellRetweetTextHeith+stats.cellRetweetedPicuterHeight+20);
         
         
